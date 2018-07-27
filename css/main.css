@@ -69,7 +69,7 @@ textarea {
  
  
  ul.leftIndent {
-  margin-left: 2em;
+  margin-left: 1em;
  }
  
 .boldUnderline {
@@ -86,10 +86,10 @@ textarea {
 }
 
 .basicList {
-    list-style: none;
+    list-style: none; 
     padding-left: 0;
  }
- 
+
  body {
   max-width: 50em;
   margin-left: auto;
@@ -111,8 +111,12 @@ textarea {
  
  @media all and (min-width: 40em) {
 }
- 
 
+body {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
 
 
 
