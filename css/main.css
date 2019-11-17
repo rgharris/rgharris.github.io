@@ -10,9 +10,27 @@ textarea {
     color: #222;
 }
 
-body {
-    font-size: 1em;
+html, body {
+    font-size: 16px;
     line-height: 1.4;
+}
+
+@media only screen and (max-width: 385px) {
+  html, body {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  html, body {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  html, body {
+    font-size: 13px;
+  }
 }
 
 ::-moz-selection {
@@ -59,30 +77,67 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
- .subSection:not(:last-child) {
-  margin-bottom: 0.5em;
+ h2 {
+   font-size: 1.85rem;
  }
- 
+
+ hr {
+   margin-top: 0.2rem;
+   margin-bottom: 0.3rem;
+ }
+
+ .subSection > .title {
+   font-size: 1.05rem;
+   margin-bottom: 0.18rem;
+   font-weight: bold;
+ }
+
+ .subSection > .subtitle {
+   font-size: 0.93rem;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+ }
+
+ .subSection > .subtitle > div:first-child {
+   margin-right: 1.5rem;
+}
+
+ .subSection > .description {
+  font-size: 0.93rem;
+  /* text-align: justify;
+  text-justify: inter-word; */
+  }
+
+  .legend {
+    font-size: 0.93rem;
+  }
+
+ .subSection:not(:last-child) {
+  margin-bottom: 1.15rem;
+ }
+
  .leftOutline p, .leftOutline ul, .leftOutline h4{
   margin: 0px;
  }
  
  
  ul.leftIndent {
-  margin-left: 1em;
+  margin-left: 1rem;
  }
  
 .boldUnderline {
-  border-bottom: 0.25em solid #2a3642;
-  float: left;
+  border-bottom: 0.08em solid;
+  font-size: 2.65rem;
+  display: inline-block;
 }
    
 .leftOutline {
-    border-left: 0.5em solid rgba(42, 54, 66, 0.5);
-    padding-left: 0.5em;
-    margin-left: 0.5em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    /* border-left: 0.5em solid rgba(42, 54, 66, 0.5);
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; */
 }
 
 .basicList {
@@ -91,25 +146,28 @@ textarea {
  }
  
  .listWithVerticalPadding > li:not(:last-child) {
-     margin-bottom: 0.5em;
+     margin-bottom: 0.5rem;
  }
 
  body {
-  max-width: 50em;
+  max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  padding-left: 1rem;
+  padding-right: 1rem;
   background-color: #fafafa;/*cbd0d6*/
   color: #2a3642;/*#637283,#586470; */
  }
  
  
-.fullWidthSection, .subSectionSmall, .subSectionLarge {
+.fullWidthSection {
   display: block;
-  float: left;
   width: 100%;
-  margin-bottom: 0.5em;
+  margin-top: 2.5em;
+}
+
+.fullWidthSection {
+  margin-bottom: 1.1rem;
 }
  
  
@@ -117,9 +175,8 @@ textarea {
 }
 
 body {
-    font-family: monospace, serif;
-    _font-family: 'courier new', monospace;
-    font-size: 1em;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
 }
 
 
@@ -216,15 +273,14 @@ body {
 @media print {
     .boldUnderline {
       border-bottom: none;
-      float: left;
     }
        
     .leftOutline {
         border-left: none;
-        padding-left: 0.5em;
-        margin-left: 0.5em;
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
+        padding-left: 0.5rem;
+        margin-left: 0.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
     * {
         background: transparent !important;
