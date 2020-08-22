@@ -195,6 +195,12 @@ footer {
   } 
 }
 
+.score {
+  /*hanging indent*/
+  padding-left: 2.2rem;
+  text-indent: -2.2rem;
+}
+
 
 /* ==========================================================================
    Media Queries
